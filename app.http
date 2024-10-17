@@ -1,0 +1,22 @@
+
+##geting all users
+ GET http://localhost:3000/users
+
+
+
+### insert users
+
+POST http://localhost:3000/users
+Content-Type: application/json
+Accept: application/json
+
+ {
+  "full_name": "John",
+  "CardNumbers": 3434,
+  "Year": 25,
+  "month": 3,
+  "CVV": 342
+
+ 
+ }
+
