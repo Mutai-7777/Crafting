@@ -17,7 +17,7 @@ userRouter.get("/users",  listUsers); //(c:Context) => {
 userRouter.get("/users/:id", getUser);
 
 //create a user
-userRouter.post("/users",zValidator('json',userSchema, (result,c)=>{
+userRouter.post("/register",zValidator('json',userSchema, (result,c)=>{
   if (!result.success) {
       return c.json(result.error,400)
   }

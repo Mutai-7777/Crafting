@@ -7,7 +7,7 @@ import { pgTable, serial, varchar, text, integer, decimal, date, timestamp, bool
 export const CardholderTable = pgTable ("cardholder",{
     user_id: serial("user_id").primaryKey(),
     full_name: varchar("full_name").notNull(),
-    CardNumbers:varchar("cardNumbers").notNull(),
+    CardNumbers:varchar("cardNumbers", {length:16}).notNull(),
     month: integer("month").notNull(),
     Year: integer("Year").notNull(),
     CVV: integer("CVV").notNull()

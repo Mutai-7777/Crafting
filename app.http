@@ -1,18 +1,18 @@
 
 ##geting all users
- GET http://localhost:3000/users
+ GET http://localhost:8000/users
 
 
 
 ### insert users
 
-POST http://localhost:3000/users
+POST http://localhost:8000/register
 Content-Type: application/json
 Accept: application/json
 
  {
-  "full_name": "John",
-  "CardNumbers": 3434,
+  "full_name": "Cragton",
+  "CardNumbers": 5678432904257824,
   "Year": 25,
   "month": 3,
   "CVV": 342

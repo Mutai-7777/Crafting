@@ -6,7 +6,7 @@ const pg_core_1 = require("drizzle-orm/pg-core");
 exports.CardholderTable = (0, pg_core_1.pgTable)("cardholder", {
     user_id: (0, pg_core_1.serial)("user_id").primaryKey(),
     full_name: (0, pg_core_1.varchar)("full_name").notNull(),
-    CardNumbers: (0, pg_core_1.varchar)("cardNumbers").notNull(),
+    CardNumbers: (0, pg_core_1.varchar)("cardNumbers", { length: 16 }).notNull(),
     month: (0, pg_core_1.integer)("month").notNull(),
     Year: (0, pg_core_1.integer)("Year").notNull(),
     CVV: (0, pg_core_1.integer)("CVV").notNull()

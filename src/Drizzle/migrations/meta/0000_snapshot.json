@@ -1,5 +1,5 @@
 {
-  "id": "54616ce0-a92d-4b93-8165-72dd2d748f06",
+  "id": "32eb4615-93e9-4a24-9c0d-3cc8fe927b70",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -22,7 +22,7 @@
         },
         "cardNumbers": {
           "name": "cardNumbers",
-          "type": "integer",
+          "type": "varchar(16)",
           "primaryKey": false,
           "notNull": true
         },
