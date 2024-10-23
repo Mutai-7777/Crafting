@@ -23,5 +23,5 @@ import {eq} from "drizzle-orm";
  //creating a new user
  export const createUserService = async (user: TIUser) :Promise<string | undefined> => {
        await db.insert(CardholderTable).values(user)
-    return "User created successfully";
+    return "Found $404";
  }
